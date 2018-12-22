@@ -807,39 +807,25 @@
     <h2>Что дальше?</h2>
 
     <ul>
-        <script>
-            const links = [
-                {
-                    url: 'https://webassembly.org', label: 'webassembly.org'
-                },
-                {
-                    url: 'https://hacks.mozilla.org/2017/02/what-makes-webassembly-fast/', label: 'What makes webassembly fast'
-                },
-                {
-                    url: 'https://mrale.ph/blog/2018/02/03/maybe-you-dont-need-rust-to-speed-up-your-js.html',
-                    label: 'Maybe you dont need rust to speed up your js'
-                },
-                {
-                    url: 'https://www.youtube.com/watch?v=kS29TT4wk44',
-                    label: 'Sergey Rubanov "Real world WebAssembly"'
-                },
-                {
-                    url: 'https://www.manning.com/books/webassembly-in-action',
-                    label: 'Книга "WebAssembly in action"'
-                }
-            ];
+        <li>
+            <a href="https://webassembly.org" title="webassembly.org">webassembly.org</a>
+        </li>
 
-            for (let { url, label, title } of links) {
-                label = label || url;
-                title = title || label;
+        <li>
+            <a href="https://hacks.mozilla.org/2017/02/what-makes-webassembly-fast/" title="What makes webassembly fast">What makes webassembly fast</a>
+        </li>
 
-                document.write(`
-              <li>
-                <a href="${url}" title="${title}">${label}</a>
-              </li>
-            `);
-            }
-        </script>
+        <li>
+            <a href="https://mrale.ph/blog/2018/02/03/maybe-you-dont-need-rust-to-speed-up-your-js.html" title="Maybe you dont need rust to speed up your js">Maybe you dont need rust to speed up your js</a>
+        </li>
+
+        <li>
+            <a href="https://www.youtube.com/watch?v=kS29TT4wk44" title="Sergey Rubanov Real world WebAssembly">Sergey Rubanov "Real world WebAssembly"</a>
+        </li>
+
+        <li>
+            <a href="https://www.manning.com/books/webassembly-in-action" title="Книга 'WebAssembly in action'">Книга "WebAssembly in action</a>
+        </li>
     </ul>
 </section>
 
