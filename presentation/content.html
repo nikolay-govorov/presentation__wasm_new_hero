@@ -1,0 +1,690 @@
+<!-- Greeting -->
+<section id="cover">
+    <h2 data-tmpl>{{name}}</h2>
+
+    <p class="intro">Говорит и показывает <a data-tmpl class="name" href="{{author.site}}">{{author.name}}</a></p>
+
+    <style>
+        #cover {
+            padding-top: 120px;
+            display: grid;
+            grid-gap: 1em;
+            grid-auto-rows: min-content;
+            align-items: center;
+            justify-content: center;
+        }
+        #cover h2 {
+            text-align: center;
+            font-size: 70px;
+            width: 100%;
+            margin: 0;
+        }
+        #cover .intro {
+            font-style: italic;
+        }
+        #cover .name {
+            color: inherit;
+        }
+    </style>
+</section>
+
+<section id="I-am-frontender">
+    <h2 class="cover">Мама, я – фронтендер</h2>
+
+    <style>
+        #I-am-frontender  h2 {
+            font-size: 70px;
+            white-space: nowrap;
+        }
+    </style>
+</section>
+
+<!-- Frontend the best -->
+<section id="frontend-the-best">
+    <h2>Я ❤️ frontend</h2>
+
+    <p><strong>Web — удивительная платформа</strong></p>
+
+    <ul>
+        <li class="next">
+            Развитая экосистема
+
+            <p class="small mute">Сотни тысяч пакетов на NPM, тысячи фрейморков, десятки тысяч библиотек для <s>реакта</s> JS</p>
+        </li>
+
+        <li class="next">
+            Лучший инструментарий
+
+            <p class="small mute">NPM / Webpack / Eslint / Stylelint / PostCSS / Jest</p>
+        </li>
+
+        <li class="next">
+            Крупнейшая аудитория
+
+            <p class="small mute">По данным Internet World Stats – 4.157.000.000 человек</p>
+        </li>
+
+        <li class="next">
+            Другие платформы копируют web
+
+            <p class="mute small">(Electron, ReactNative / PhoneGap / Cordova)</p>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2 class="visibility-hidden">Веб предназначен для информации</h2>
+
+    <img src="images/amel_true%20tweet.png" class="cover" alt="">
+</section>
+
+<section id="what-we-doind">
+    <div class="cover">
+        <h2>Web — сеть для обмена научными статьями</h2>
+
+        <div class="next">
+            <p>– Мы делаем приложения в приложении для просмотра научных статей.</p>
+            <p>– Что может пойти не так?</p>
+        </div>
+    </div>
+
+    <style>
+        #what-we-doind > div {
+            font-size: 1.5em;
+            line-height: 1.4;
+        }
+
+        #what-we-doind h2 {
+            margin-right: -2em;
+        }
+    </style>
+</section>
+
+<section id="frontend-problems">
+    <h2 class="visibility-hidden">Какие у нас проблемы</h2>
+
+    <div class="columns two">
+        <div>
+            <h3 class="subheader">Прикладные проблемы</h3>
+
+            <p class="small mute">Решаются обновлениям языка или тулзами</p>
+
+            <ul>
+                <li class="next">
+                    Нет нужного API
+                </li>
+                <li class="next">Кривой синтаксис</li>
+                <li class="next">Неявное поведение</li>
+            </ul>
+            <span class="next">...</span>
+        </div>
+
+        <div>
+            <h3 class="subheader">Концептуальные</h3>
+
+            <p class="small mute">Ограничения самой платформы</p>
+
+            <ul>
+                <li class="next">Обфускация</li>
+                <li class="next">Работа с памятью</li>
+                <li class="next">Внешняя экосистема</li>
+                <li class="next">Математика</li>
+            </ul>
+            <span class="next">...</span>
+        </div>
+    </div>
+
+    <style>
+        #frontend-problems .subheader {
+            margin-bottom: 0;
+        }
+    </style>
+</section>
+
+<section>
+    <h2 class="visibility-hidden">JavaScript Only</h2>
+
+    <img style="width: 100%; height: 100%" src="images/javascript-only.jpg" class="cover" alt="" />
+</section>
+
+<section id="js-features">
+    <div class="lists columns two">
+        <ul>
+            <li class="next">Тяжёлый исходный код</li>
+
+            <li class="next">
+                Требователен к ресурсам
+
+                <ul>
+                    <li>Дорогой парсинг</li>
+                    <li>Cборщик мусора</li>
+                </ul>
+            </li>
+
+            <li class="next">
+                Ненадёжен
+
+                <ul>
+                    <li>Спекулятивные оптимизации</li>
+                    <li>Недетерминированность</li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul>
+            <li class="next">
+                Точные/сложные вычисления
+
+                <pre class="mute small">0.20 + 0.30 !== 0.40</pre>
+            </li>
+
+            <li class="next">
+                Жизнь вне фронтенда:
+
+                <ul>
+                    <li>
+                        Легаси
+
+                        <p class="mute small">Проект на С++ на 100k строк <b>работающего</b> кода</p>
+                    </li>
+
+                    <li class="next">
+                        Библиотеки
+
+                        <p class="mute small">Миллионы <b>хорошо решённых</b> не на JS проблем</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="next">Обфускация, сокрытие исходников</li>
+        </ul>
+    </div>
+
+    <a class="next" href="https://www.youtube.com/watch?v=kS29TT4wk44">Сергей Рубанов "Real world WebAssembly"</a>
+
+    <style>
+        #js-features {
+            padding-top: 50px;
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+        #js-features .lists {
+            grid-column-gap: 0;
+        }
+        #js-features ul ul {
+            margin-left: 30px;
+        }
+    </style>
+</section>
+
+<section>
+    <h2>Оптимизировать логику приложения</h2>
+
+    <ul>
+        <li>Выносить код в воркеры</li>
+        <li>Оптимизировать алгоритмы</li>
+        <li>Выполнять часть расчётов на сервере</li>
+    </ul>
+
+    <a href="https://mrale.ph/blog/2018/02/03/maybe-you-dont-need-rust-to-speed-up-your-js.html">Maybe you dont need rust to speed up your js</a>
+</section>
+
+<section>
+    <h2>Перенести логику на сервер</h2>
+
+    <ul>
+        <li class="next">
+            Зависим от соедеинения
+
+            <p class="small mute">Плохой интернет или офлайн сломают приложение</p>
+        </li>
+
+        <li class="next">
+            Увеличивает нагрузку на сервер
+
+            <p class="small mute">
+                Если речь о ресурсоёмких задачах, непозволительно дорого
+                расчитывать все данные для всех клиентов на сервере
+            </p>
+        </li>
+
+        <li class="next">
+            Может потреблять много трафика
+
+            <p class="small mute">Каждый чих потребует загрузить какие-то данные, возможно достаточно объёмные</p>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Надстройки над JS</h2>
+
+    <ul>
+        <li>Dart</li>
+        <li>Purescript</li>
+        <li>TypeScript</li>
+        <li>Elm</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Компилируются в JS</h2>
+
+    <ul>
+        <li>Java</li>
+        <li>OCaml</li>
+        <li>F#</li>
+        <li>Scala / Kotlin</li>
+        <li>Haskell</li>
+
+        <li>Emscripten (C++)</li>
+    </ul>
+</section>
+
+<section id="asm-js">
+    <h2>asm.js</h2>
+
+    <div class="columns two">
+        <div>
+            <p><strong>asm.js</strong> – an extraordinarily optimizable, low-level subset of JavaScript</p>
+
+            <p>asm.js спекулирует на оптимизациях JIT'a</p>
+
+            <ul class="small">
+                <li>Есть определённые гарантии типов</li>
+                <li>Используя Emscripten можно компилировать C в JS</li>
+                <li>Можно использовать многие оптимизации LLVM</li>
+            </ul>
+        </div>
+
+        <pre>
+          <code>function avg(x, y) {</code>
+          <code>  x = x|0;</code>
+          <code>  y = y|0;</code>
+          <code>  return ((x + y) / 2)|0;</code>
+          <code>}</code>
+			  </pre>
+    </div>
+
+    <style>
+        #asm-js {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        #asm-js .columns {
+            grid-template-columns: 1fr max-content;
+        }
+    </style>
+</section>
+
+<section id="this-is-js">
+    <h2 class="center-cover">Это всё ещё JavaScript</h2>
+
+    <style>
+        #this-is-js {
+            background-image: url("images/tumblr.jpg");
+            background-size: cover;
+        }
+    </style>
+</section>
+
+<section>
+    <img height="100%" src="./images/new-hero.jpg" class="cover" />
+</section>
+
+<section id="old-solutions">
+    <h2>Были решения</h2>
+
+    <ul>
+        <li>Java Applets</li>
+        <li>Action Script</li>
+        <li>PPAPI</li>
+        <li>ActiveX</li>
+        <li>Dart *</li>
+    </ul>
+
+    <style>
+        #old-solutions li {
+            font-size: 1.5em;
+        }
+    </style>
+</section>
+
+<section id="wasm">
+    <h2>Web Assembly</h2>
+
+    <figure>
+        <blockquote>
+            <p>
+                WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine.
+                Wasm is designed as a portable target for compilation of high-level languages like C/C++/Rust,
+                enabling deployment on the web for client and server applications.
+            </p>
+        </blockquote>
+
+        <figcaption><a class="link" href="https://webassembly.org">webassembly.org</a></figcaption>
+    </figure>
+
+    <style>
+        #wasm .link {
+            color: inherit;
+        }
+    </style>
+</section>
+
+<section>
+    <h2>Что это значит?</h2>
+
+    <ul>
+        <li class="next">WASM – цель компиляции</li>
+        <li class="next">Не имеет сборщика мусора</li>
+        <li class="next">Компилируется из высокоуровневых языков</li>
+        <li class="next">Выполняется в собственной виртуальной машине</li>
+    </ul>
+</section>
+
+<section id="js-compile-target">
+    <h2 class="cover center-cover">WebAssembly — <strong>цель компиляции</strong>, стандартизированный бинарный формат</h2>
+</section>
+
+<section>
+    <h2>Чем он лучше</h2>
+
+    <ul>
+        <li>
+            Эффективный и быстрый
+        </li>
+
+        <li>
+            Безопасный
+        </li>
+
+        <li>
+            Полностью формализован и детерменирован
+
+            <p class="small mute">Верефицирован на <a href="https://isabelle.in.tum.de/">Isabelle</a></p>
+        </li>
+
+        <li>
+            Открытый и отлаживаемый
+
+            <p class="mute small">Предназначен для печати в текстовом формате</p>
+        </li>
+
+        <li>
+            Работает в вебе
+
+            <p class="mute small">Но не только в вебе</p>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Например</h2>
+
+    <ul>
+        <li>Графика</li>
+        <li>Криптография</li>
+        <li>Легаси на С/C++</li>
+        <li>Алгоритмы эффективно работающие с памятью</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Чем WASM <u>не</u> является</h2>
+
+    <ul>
+        <li>Расширением JS</li>
+        <li>Языком ассемблера</li>
+        <li>Языком программирования</li>
+        <li>Реализацией VM</li>
+        <li>Плагином вроде Flash / Silverlight</li>
+    </ul>
+</section>
+
+<section>
+    <h2>И снова</h2>
+
+    <p>
+        <span class="next">WebAssembly – <b>цель компиляции</b>, формат байт-кода,</span>
+        <span class="next">который применим в вебе,</span>
+        <span class="next">виртуальная машина для которого реализована в браузере,</span>
+        <span class="next">но <b>не только</b> в браузере.</span>
+    </p>
+</section>
+
+<section>
+    <img height="80%" class="cover" src="images/circuitries/plan.svg" alt="">
+</section>
+
+<section id="wasm-formats">
+    <h2>Формат WASM файла</h2>
+
+    <p>Может быть записан в 2 эквивалентных форматах</p>
+
+    <div class="columns two">
+        <section>
+            <h3>Текстовый формат</h3>
+
+            <hr>
+
+            <ul>
+                <li>Читается человеком</li>
+                <li>Весит много</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Бинарный формат</h3>
+
+            <hr>
+
+            <ul>
+                <li>Читается машиной</li>
+                <li>Весит мало</li>
+            </ul>
+        </section>
+    </div>
+
+    <style>
+        #wasm-formats hr,
+        #wasm-formats h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    </style>
+</section>
+
+<section>
+    <h2>Текстовый формат</h2>
+
+    <pre>
+        <code>(module</code>
+        <code>  (func $avg (export "avg")</code>
+        <code>    (param $p0 i32) (param $p1 i32) (result i32)</code>
+        <code>    (i32.div_s</code>
+        <code>      (i32.add (get_local $p1)</code>
+        <code>               (get_local $p0))</code>
+        <code>      (i32.const 2))))</code>
+      </pre>
+</section>
+
+<section>
+    <h2>Бинарный формат</h2>
+
+    <pre>
+        <code>00 61 73 6D 01 00 00 00 01 07 01 60 02 7F 7F 01</code>
+        <code>7F 03 02 01 00 07 07 01 03 61 76 67 00 00 0A 0C</code>
+        <code>01 0A 00 20 01 20 00 6A 41 02 6D 0B 00 1A 04 6E</code>
+        <code>61 6D 65 01 06 01 00 03 61 76 67 02 0B 01 00 02</code>
+        <code>00 02 70 30 01 02 70 31</code>
+      </pre>
+</section>
+
+<section id="v8">
+    <h2>V8</h2>
+
+    <img src="images/circuitries/JIT.svg" alt="JIT">
+
+    <style>
+        #v8 img {
+            width: 100%;
+        }
+    </style>
+</section>
+
+<section id="this-is-not-js-killer">
+    <h2>Это не замена JavaScript</h2>
+
+    <img src="images/circuitries/arc.svg" alt="">
+
+    <style>
+        #this-is-not-js-killer h2 {
+            margin-top: -5%;
+        }
+
+        #this-is-not-js-killer img {
+            width: 70%;
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            z-index: -1;
+            transform: translate(-50%, 0);
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</section>
+
+<section>
+    <img src="images/caniuse.png" alt="" class="cover">
+</section>
+
+<section>
+    <h2>Это уже в проде</h2>
+
+    <ul>
+        <li>Unity перешёл на WASM</li>
+        <li>https://github.com/rhysd/vim.wasm</li>
+        <li>https://blog.figma.com/webassembly-cut-figmas-load-time-by-3x-76f3f2395164</li>
+        <li>https://webassembly.org/demo/</li>
+        <li>https://s3.amazonaws.com/mozilla-games/ZenGarden/EpicZenGarden.html</li>
+    </ul>
+</section>
+
+<section>
+    <h2>main.c</h2>
+
+    <pre>
+        <code>#include &lt;stdio.h&gt;</code>        <code>int main(int argc, char ** argv) {</code>
+        <code>  printf("Hello, world!\n");</code>
+        <code>}</code>
+      </pre>
+
+    <pre>
+        <code>$ emcc main.c -s WASM=1 -o build/main.js</code>
+      </pre>
+</section>
+
+<section>
+    <img height="100%" src="images/build.png" alt="" class="cover">
+</section>
+
+<section>
+    <h2><pre>index.html</pre></h2>
+
+    <pre>
+        <code>&lt;html&gt;</code>
+        <code> &lt;body&gt;</code>
+          <code>   &lt;script src="build/main.js"&gt;&lt;/script&gt;</code>
+        <code> &lt;/body&gt;</code>
+        <code>&lt;/html&gt;</code>
+      </pre>
+</section>
+
+<section>
+    <h2>server.js</h2>
+
+    <p>Этот билд работает и в NodeJS</p>
+
+    <pre>
+        <code>const main = require('build/main.js')</code>
+        <code>// using main...</code>
+      </pre>
+</section>
+
+<section>
+    <h2>WASM модули изоморфны</h2>
+
+    <p>Вы можете поставлять в npm пакете <code>.wasm</code> файл и не собирать нативный биндинг под каждую платформу</.code>
+</section>
+
+<section>
+    <h2>Вы можете прозрачно использовать</h2>
+
+    <ul>
+        <li>Rust</li>
+        <li>C/C++</li>
+        <li>Go</li>
+    </ul>
+
+    <p>...и многие другие</p>
+</section>
+
+<section id="what-next">
+    <h2>Что дальше?</h2>
+
+    <ul>
+        <script>
+            const links = [
+                {
+                    url: 'https://webassembly.org', label: 'webassembly.org'
+                },
+                {
+                    url: 'https://hacks.mozilla.org/2017/02/what-makes-webassembly-fast/', label: 'What makes webassembly fast'
+                },
+                {
+                    url: 'https://mrale.ph/blog/2018/02/03/maybe-you-dont-need-rust-to-speed-up-your-js.html',
+                    label: 'Maybe you dont need rust to speed up your js'
+                },
+                {
+                    url: 'https://www.youtube.com/watch?v=kS29TT4wk44',
+                    label: 'Sergey Rubanov "Real world WebAssembly"'
+                }
+            ];
+
+            for (let { url, label, title } of links) {
+                label = label || url;
+                title = title || label;
+
+                document.write(`
+              <li>
+                <a href="${url}" title="${title}">${label}</a>
+              </li>
+            `);
+            }
+        </script>
+    </ul>
+</section>
+
+<section>
+    <h2>Спасибо, что слушали</h2>
+
+    <p>С вами был, <a href="{{author.site}}" data-tmpl>{{author.name}}</a> из <a data-tmpl href="{{author.job.site}}">{{author.job.name}}</a></p>
+
+    <ul>
+        <li>
+            <a href="https://govorov.online">govorov.online</a>
+        </li>
+        <li>
+            Twiter <a href="https://twitter.com/govorov_n">/govorov_n</a>
+        </li>
+        <li>
+            GitHub <a href="https://githab.com/nikolay-govorov">/nikolay-govorov</a>
+        </li>
+        <li>
+            ВКонтакте <a href="https://vk.com/nikolay_govorov">/nikolay_govorov</a>
+        </li>
+    </ul>
+</section>

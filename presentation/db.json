@@ -1,0 +1,17 @@
+{
+  "name": "WebAssembly — новый герой",
+
+  "author": {
+    "name": "Говоров Николай",
+    "site": "https://govorov.online",
+
+    "job":  {
+      "name": "ВКонтакте",
+      "site": "https://vk.com"
+    }
+  },
+
+  "meta": {
+    "repository": "https://github.com/shower/shower"
+  }
+}
