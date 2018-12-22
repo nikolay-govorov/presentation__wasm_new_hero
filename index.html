@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{name}}</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/shower-ribbon/styles/styles.css">
+
+    <style>
+        .shower {
+            --slide-ratio: calc(4 / 3);
+        }
+
+        .mute {
+            color: #999;
+        }
+
+        .small {
+            font-size: .75em;
+        }
+
+        .visibility-hidden {
+            visibility: hidden;
+            overflow: hidden;
+            width: 0;
+            height: 0;
+            position: absolute;
+        }
+
+        li > p:last-child {
+            margin-bottom: 0;
+        }
+
+        li > pre {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        ul ul > li::before {
+            content: '–' !important;
+        }
+
+        .center-cover {
+            line-height: 1.5 !important;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body class="shower list">
+    <template id="root">
+        <header class="caption">
+            <h1 data-tmpl>{{name}}</h1>
+
+            <p>
+                <a data-tmpl target="_blank" href="{{author.site}}">{{author.name}}</a> из <a data-tmpl target="_blank" href="{{author.job.site}}">{{author.job.name}}</a>
+            </p>
+        </header>
+
+        <!-- __Slides__ -->
+
+        <footer class="badge">
+            <a data-tmpl href="{{meta.repository}}">Fork me on GitHub</a>
+        </footer>
+
+        <div class="progress"></div>
+
+        <script src="../node_modules/shower-core/shower.min.js"></script>
+        <!-- Copyright © 2018 Yours Truly, Famous Inc. -->
+    </template>
+
+    <script src="main.js"></script>
+</body>
+</html>
