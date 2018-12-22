@@ -340,6 +340,7 @@
         <li>Java Applets</li>
         <li>Action Script</li>
         <li>PPAPI</li>
+        <li>PNaCl</li>
         <li>ActiveX</li>
         <li>Dart *</li>
     </ul>
@@ -373,31 +374,39 @@
     </style>
 </section>
 
-<section>
-    <h2>Что это значит?</h2>
-
-    <ul>
-        <li class="next">WASM – цель компиляции</li>
-        <li class="next">Не имеет сборщика мусора</li>
-        <li class="next">Компилируется из высокоуровневых языков</li>
-        <li class="next">Выполняется в собственной виртуальной машине</li>
-    </ul>
-</section>
-
 <section id="js-compile-target">
     <h2 class="cover center-cover">WebAssembly — <strong>цель компиляции</strong>, стандартизированный бинарный формат</h2>
 </section>
 
 <section>
-    <h2>Чем он лучше</h2>
+    <h2>Что это значит?</h2>
+
+    <ul>
+        <li class="next">WASM – цель компиляции</li>
+        <li class="next">Компилируется из высокоуровневых языков</li>
+        <li class="next">Выполняется в собственной виртуальной машине</li>
+        <li class="next">Не имеет сборщика мусора</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Зачем это нужно?</h2>
 
     <ul>
         <li>
             Эффективный и быстрый
+
+            <ul>
+                <li>меньший объем файлов</li>
+                <li>скорость парсинга</li>
+                <li>скорость компиляции (предсказуемая) скорость исполнения</li>
+            </ul>
         </li>
 
         <li>
             Безопасный
+
+            <p class="small mute">Любые действия выполняются в песочнице</p>
         </li>
 
         <li>
@@ -421,17 +430,6 @@
 </section>
 
 <section>
-    <h2>Например</h2>
-
-    <ul>
-        <li>Графика</li>
-        <li>Криптография</li>
-        <li>Легаси на С/C++</li>
-        <li>Алгоритмы эффективно работающие с памятью</li>
-    </ul>
-</section>
-
-<section>
     <h2>Чем WASM <u>не</u> является</h2>
 
     <ul>
@@ -440,6 +438,7 @@
         <li>Языком программирования</li>
         <li>Реализацией VM</li>
         <li>Плагином вроде Flash / Silverlight</li>
+        <li>Технологией только для веба</li>
     </ul>
 </section>
 
@@ -455,9 +454,32 @@
 </section>
 
 <section>
-    <img height="80%" class="cover" src="images/circuitries/plan.svg" alt="">
+    <h2>Например</h2>
+
+    <ul>
+        <li>Графика</li>
+        <li>Игры</li>
+        <li>Музыкальные приложения</li>
+        <li>Обработка изображений и видео</li>
+        <li>Криптография</li>
+        <li>Легаси на С/C++</li>
+        <li>Моделирование / эмуляция платформы</li>
+        <li>Алгоритмы эффективно работающие с памятью</li>
+    </ul>
 </section>
 
+<section>
+    <h2>Использование вне браузера</h2>
+
+    <ul>
+        <li>Серверные вычисления ненадежного кода</li>
+        <li>Симметричные вычисления на нескольких узлах</li>
+        <li>Гибридные приложения на мобильных устройствах</li>
+        <li>Служба распространения игр (портативная и безопасная)</li>
+    </ul>
+</section>
+
+<!-- Wasm format -->
 <section id="wasm-formats">
     <h2>Формат WASM файла</h2>
 
@@ -465,7 +487,7 @@
 
     <div class="columns two">
         <section>
-            <h3>Текстовый формат</h3>
+            <h3>Текстовый формат (Wat)</h3>
 
             <hr>
 
@@ -476,7 +498,7 @@
         </section>
 
         <section>
-            <h3>Бинарный формат</h3>
+            <h3>Бинарный формат (Wasm)</h3>
 
             <hr>
 
@@ -486,6 +508,8 @@
             </ul>
         </section>
     </div>
+
+    <p><a href="https://github.com/WebAssembly/wabt">wabt</a> — инструмент для транспиляции wat2wasm и wasm2wat</p>
 
     <style>
         #wasm-formats hr,
@@ -522,55 +546,13 @@
       </pre>
 </section>
 
-<section id="v8">
-    <h2>V8</h2>
-
-    <img src="images/circuitries/JIT.svg" alt="JIT">
-
-    <style>
-        #v8 img {
-            width: 100%;
-        }
-    </style>
-</section>
-
-<section id="this-is-not-js-killer">
-    <h2>Это не замена JavaScript</h2>
-
-    <img src="images/circuitries/arc.svg" alt="">
-
-    <style>
-        #this-is-not-js-killer h2 {
-            margin-top: -5%;
-        }
-
-        #this-is-not-js-killer img {
-            width: 70%;
-            position: absolute;
-            bottom: 10%;
-            left: 50%;
-            z-index: -1;
-            transform: translate(-50%, 0);
-            max-width: 100%;
-            max-height: 100%;
-        }
-    </style>
+<!-- Emscripten -->
+<section>
+    <img class="cover" src="images/emscripten.png" alt="Emscripten logo">
 </section>
 
 <section>
-    <img src="images/caniuse.png" alt="" class="cover">
-</section>
-
-<section>
-    <h2>Это уже в проде</h2>
-
-    <ul>
-        <li>Unity перешёл на WASM</li>
-        <li>https://github.com/rhysd/vim.wasm</li>
-        <li>https://blog.figma.com/webassembly-cut-figmas-load-time-by-3x-76f3f2395164</li>
-        <li>https://webassembly.org/demo/</li>
-        <li>https://s3.amazonaws.com/mozilla-games/ZenGarden/EpicZenGarden.html</li>
-    </ul>
+    <img height="80%" class="cover" src="images/circuitries/plan.svg" alt="">
 </section>
 
 <section>
@@ -606,12 +588,201 @@
 <section>
     <h2>server.js</h2>
 
-    <p>Этот билд работает и в NodeJS</p>
+    <p><strong>Этот билд работает и в NodeJS</strong></p>
 
     <pre>
         <code>const main = require('build/main.js')</code>
         <code>// using main...</code>
       </pre>
+</section>
+
+<section>
+    <h2 class="center-cover">Как это работает в браузере</h2>
+</section>
+
+<!-- V8 -->
+<section id="v8">
+    <h2>V8</h2>
+
+    <img src="images/circuitries/JIT.svg" alt="JIT">
+
+    <style>
+        #v8 img {
+            width: 100%;
+        }
+    </style>
+</section>
+
+<!-- Is not JS killer -->
+<section id="this-is-not-js-killer">
+    <h2>Это не замена JavaScript</h2>
+
+    <img src="images/circuitries/arc.svg" alt="">
+
+    <style>
+        #this-is-not-js-killer h2 {
+            margin-top: -5%;
+        }
+
+        #this-is-not-js-killer img {
+            width: 70%;
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            z-index: -1;
+            transform: translate(-50%, 0);
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</section>
+
+<section>
+    <h2>Поддержка в браузерах</h2>
+
+    <img src="images/caniuse.png" alt="" class="cover">
+</section>
+
+<!-- Кем и как развивается -->
+<section>
+    <h2>Кем и как развивается</h2>
+
+    <section>
+        <h3><a href="https://www.w3.org/wasm/">W3C WebAssembly Working Group</a></h3>
+
+        <p>
+            ведет разработку технологии.
+            Включает сотрудников Mozilla, Google, Apple, Microsoft, Facebook, Intel, Igalia, др.
+        </p>
+    </section>
+
+    <section>
+        <h3><a href="https://www.w3.org/community/webassembly/">W3C WebAssembly Community Group</a></h3>
+
+        <p>
+            совместная разработка технологии до ее стандартизации.
+            Включает как сотрудников компаний, так и индивидуальных участников.
+        </p>
+    </section>
+</section>
+
+<section>
+    <h2>Спецификации WebAssembly</h2>
+
+    <ul>
+        <li>
+            <a href="http://webassembly.github.io/spec/core/index.html">Core specification</a> — определяет структуру wasm-модулей, их бинарное и текстовое представления,
+            а также семантику валидации, инстанциирования и исполнения
+        </li>
+
+        <li>
+            <a href="http://webassembly.github.io/spec/js-api/index.html">JavaScript API</a> — определяет JavaScript классы и объекты для доступа к WebAssembly из JavaScript, включая методы валидации, компиляции, инстанциирования, а также импортов и экспортов из / в JavaScript
+        </li>
+
+        <li>
+            <a href="http://webassembly.github.io/spec/web-api/index.html">Web API</a> — определяет расширения JavaScript API для браузеров, в частности потоковые компиляцию и инстанциирование
+        </li>
+    </ul>
+
+    <p>Существует также <a href="https://github.com/WebAssembly/spec/blob/master/interpreter/README.md">референсный (эталонный) интерпретатор</a> WebAssembly</p>
+</section>
+
+<section>
+    <h2 class="center-cover">ToolKit</h2>
+</section>
+
+<section>
+    <h2>Языки созданные для компиляции в WASM</h2>
+
+    <ul>
+        <li>
+            <h3>
+                <a href="https://github.com/AssemblyScript/assemblyscript">AssemblyScript</a>
+            </h3>
+
+            <p>AssemblyScript компилирует строго типизированный TypeScript (в основном JavaScript с типами) в WebAssembly с помощью Binaryen.</p>
+        </li>
+
+        <li>
+            <h3>
+                <a href="https://github.com/ballercat/walt">Walt</a>
+            </h3>
+
+            <p>
+                ⚡️ Walt альтернативный синтаксис для текстового формата WebAssembly. Это эксперимент по использованию синтаксиса JavaScript для записи как можно ближе к железу. Это JavaScript с правилами. .walt компилируются непосредственно в двоичном формате WebAssembly.
+            </p>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Пддерживают компиляцию в WASM</h2>
+
+    <ul>
+        <li>
+            <strong>Rust</strong>
+        </li>
+        <li>
+            <strong>С/С++</strong>
+        </li>
+        <li>
+            Go
+        </li>
+        <li>
+            Kotlin
+        </li>
+        <li>
+            OCaml
+        </li>
+        <li>
+            Lua
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Сборщики</h2>
+
+    <ul>
+        <li>Webpack</li>
+        <li>Parcel</li>
+        <li>Rollup</li>
+    </ul>
+
+    <pre>
+        <code>import { sum } from './build.wasm';</code>
+        <code> </code>
+        <code>sum(3, 4); // -> 7</code>
+    </pre>
+</section>
+
+<section>
+    <h2>Что будет дальше</h2>
+
+    <ul>
+        <li>Threads</li>
+        <li>Garbage collector</li>
+        <li>SIMD</li>
+        <li>ES Modules</li>
+        <li>Exceptions</li>
+        <li>WebGL bindings</li>
+        <li>Sourcemap</li>
+        <li>ECMAScript module integration</li>
+        <li>Multiple return values</li>
+        <li>Closures</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Это уже в проде</h2>
+
+    <ul>
+        <li>Unity перешёл на WASM</li>
+        <li>https://github.com/rhysd/vim.wasm</li>
+        <li>https://blog.figma.com/webassembly-cut-figmas-load-time-by-3x-76f3f2395164</li>
+        <li>https://webassembly.org/demo/</li>
+        <li>https://s3.amazonaws.com/mozilla-games/ZenGarden/EpicZenGarden.html</li>
+    </ul>
 </section>
 
 <section>
@@ -651,6 +822,10 @@
                 {
                     url: 'https://www.youtube.com/watch?v=kS29TT4wk44',
                     label: 'Sergey Rubanov "Real world WebAssembly"'
+                },
+                {
+                    url: 'https://www.manning.com/books/webassembly-in-action',
+                    label: 'Книга "WebAssembly in action"'
                 }
             ];
 

@@ -92,8 +92,11 @@ async function render(slidesContent, data) {
     }
 
     // Setup slides
-    const slides = templateNode.querySelectorAll('section');
-    for (const slide of slides) {
+    for (const slide of templateNode.children) {
+        if (slide.tagName.toLowerCase() !== 'section') {
+            continue;
+        }
+
         slide.classList.add('slide');
     }
 
